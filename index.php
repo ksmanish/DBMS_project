@@ -10,11 +10,12 @@
 
 $result=$con->query("select * from DBMSdata");
 
-
+    $i=1;
     while($row_brand=mysqli_fetch_array($result))
     {
         $brand_image = $row_brand["Picture"];
-        $image_data = '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode( $brand_image ).'"/>';
+        $image_data[$i] = '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode( $brand_image ).'"/>';
+        $i++;
     }
 
     
@@ -108,149 +109,129 @@ $result=$con->query("select * from DBMSdata");
     
     
   <div class="card ">
-    <?php echo $image_data; ?>
+    <?php $j=1; echo $image_data[$j]; $j++; ?>
     
     <h10>Walking dead</h10>
 
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+    <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
+ 
+ 
   
 </div>
 
 <div class="card-deck container mb-3">
   <div class="card ">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
     <h10>Walking dead</h10>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
+     <?php echo $image_data[$j]; $j++; ?>
+  </div> 
   
 </div>
 
 <div class="card-deck container mb-3">
   <div class="card ">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
     <h10>Walking dead</h10>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
+     <?php echo $image_data[$j]; $j++; ?>
+  </div> 
   
 </div>
+
 <div class="card-deck container mb-3">
   <div class="card ">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
     <h10>Walking dead</h10>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
+     <?php echo $image_data[$j]; $j++; ?>
+  </div> 
   
 </div>
+
 <div class="card-deck container mb-3">
   <div class="card ">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
     <h10>Walking dead</h10>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
+     <?php echo $image_data[$j]; $j++; ?>
   </div>
   <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://cdn.fmovies.ac/upload/2017/10/poster-the-walking-dead-season-8-2017.jpg" alt="Card image cap">
-  </div>
+     <?php echo $image_data[$j]; $j++; ?>
+  </div> 
   
 </div>
+
+<div class="card-deck container mb-3">
+  <div class="card ">
+     <?php echo $image_data[$j]; $j++; ?>
+    <h10>Walking dead</h10>
+  </div>
+  <div class="card">
+     <?php echo $image_data[$j]; $j++; ?>
+  </div>
+  <div class="card">
+     <?php echo $image_data[$j]; $j++; ?>
+  </div>
+  <div class="card">
+     <?php echo $image_data[$j]; $j++; ?>
+  </div>
+  <div class="card">
+     <?php echo $image_data[$j]; $j++; ?>
+  </div> 
+  
+</div>
+
 </div>
 
 
